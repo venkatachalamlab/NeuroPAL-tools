@@ -35,6 +35,7 @@ ganglion_LR(end).neurons = {
 ganglion_LR(end+1).name = 'Anterior Ganglion (Left)';
 ganglion_LR(end).neurons = {
     'BAGL'
+    'CEMVL'
     'CEPVL'
     'IL1L'
     'IL1DL'
@@ -42,6 +43,7 @@ ganglion_LR(end).neurons = {
     'IL2L'
     'IL2DL'
     'IL2VL'
+    'MCML'
     'OLLL'
     'OLQDL'
     'OLQVL'
@@ -60,6 +62,7 @@ ganglion_LR(end).neurons = {
 ganglion_LR(end+1).name = 'Anterior Ganglion (Right)';
 ganglion_LR(end).neurons = {
     'BAGR'
+    'CEMVR'
     'CEPVR'
     'IL1R'
     'IL1DR'
@@ -67,6 +70,7 @@ ganglion_LR(end).neurons = {
     'IL2R'
     'IL2DR'
     'IL2VR'
+    'MCMR'
     'OLLR'
     'OLQDR'
     'OLQVR'
@@ -85,6 +89,8 @@ ganglion_LR(end).neurons = {
 ganglion_LR(end+1).name = 'Dorsal Ganglion';
 ganglion_LR(end).neurons = {
     'ALA'
+    'CEMDL'
+    'CEMDR'
     'CEPDL'
     'CEPDR'
     'RID'
@@ -217,7 +223,7 @@ ganglion_LR(end).neurons = {
     };
 
 % Retrovesicular Ganglion
-ganglion_LR(end+1).name = 'Retrovesicular Ganglion';
+ganglion_LR(end+1).name = 'Retro-Vesicular Ganglion';
 ganglion_LR(end).neurons = {
     'AS1'
     'AVFL'
@@ -257,8 +263,6 @@ ganglion_LR(end+1).name = 'Central Midbody';
 ganglion_LR(end).neurons = {
     'CANL'
     'CANR'
-    'HSNL'
-    'HSNR'
     };
 
 % Posterior Midbody
@@ -284,6 +288,23 @@ ganglion_LR(end).neurons = {
     'AS8'
     'AS9'
     'AS10'
+    'CA1'
+    'CA2'
+    'CA3'
+    'CA4'
+    'CA5'
+    'CA6'
+    'CA7'
+    'CA8'
+    'CA9'
+    'CP1'
+    'CP2'
+    'CP3'
+    'CP4'
+    'CP5'
+    'CP6'
+    'CP7'
+    'CP8'
     'DA2'
     'DA3'
     'DA4'
@@ -318,12 +339,6 @@ ganglion_LR(end).neurons = {
     'VB9'
     'VB10'
     'VB11'
-    'VC1'
-    'VC2'
-    'VC3'
-    'VC4'
-    'VC5'
-    'VC6'
     'VD3'
     'VD4'
     'VD5'
@@ -339,14 +354,24 @@ ganglion_LR(end).neurons = {
 ganglion_LR(end+1).name = 'Pre-Anal Ganglion';
 ganglion_LR(end).neurons = {
     'AS11'
+    'CP9'
     'DA8'
     'DA9'
     'DD6'
+    'HOA'
+    'HOB'
     'PDA'
     'PDB'
-    'PVPL'
-    'PVPR'
+    'PDC'
+    'PGA'
+    'PVP'
+    'PVS'
     'PVT'
+    'PVU'
+    'PVV'
+    'PVX'
+    'PVY'
+    'PVZ'
     'VA12'
     'VD12'
     'VD13'
@@ -358,16 +383,95 @@ ganglion_LR(end).neurons = {
     'DVA'
     'DVB'
     'DVC'
+    'DVE'
+    'DVF'
+    'DX1'
+    'DX2'
+    'DX3'
+    'DX4'
+    'EF1'
+    'EF2'
+    'EF3'
+    'EF4'
+    };
+
+% Rays (Left)
+ganglion_LR(end+1).name = 'Rays (Left)';
+ganglion_LR(end).neurons = {
+    'R1AL'
+    'R1BL'
+    'R2AL'
+    'R2BL'
+    'R3AL'
+    'R3BL'
+    'R4AL'
+    'R4BL'
+    'R5AL'
+    'R5BL'
+    'R6AL'
+    'R6BL'
+    'R7AL'
+    'R7BL'
+    'R8AL'
+    'R8BL'
+    'R9AL'
+    'R9BL'
+    };
+
+% Rays (Right)
+ganglion_LR(end+1).name = 'Rays (Right)';
+ganglion_LR(end).neurons = {
+    'R1AR'
+    'R1BR'
+    'R2AR'
+    'R2BR'
+    'R3AR'
+    'R3BR'
+    'R4AR'
+    'R4BR'
+    'R5AR'
+    'R5BR'
+    'R6AR'
+    'R6BR'
+    'R7AR'
+    'R7BR'
+    'R8AR'
+    'R8BR'
+    'R9AR'
+    'R9BR'
+    };
+
+% Cloacal Ganglion
+ganglion_LR(end+1).name = 'Cloacal Ganglion (Left)';
+ganglion_LR(end).neurons = {
+    'PCAL'
+    'PCBL'
+    'PCCL'
+    'SPCL'
+    'SPDL'
+    'SPVL'
+    };
+
+% Cloacal Ganglion
+ganglion_LR(end+1).name = 'Cloacal Ganglion (Right)';
+ganglion_LR(end).neurons = {
+    'PCAR'
+    'PCBR'
+    'PCCR'
+    'SPCR'
+    'SPDR'
+    'SPVR'
     };
 
 % Tail (Left)
-ganglion_LR(end+1).name = 'Tail (Left)';
+ganglion_LR(end+1).name = 'Lumbar Ganglion (Left)';
 ganglion_LR(end).neurons = {
     'ALNL'
     'LUAL'
     'PHAL'
     'PHBL'
     'PHCL'
+    'PHDL'
     'PLML'
     'PLNL'
     'PQR'
@@ -378,13 +482,14 @@ ganglion_LR(end).neurons = {
     };
 
 % Tail (Right)
-ganglion_LR(end+1).name = 'Tail (Right)';
+ganglion_LR(end+1).name = 'Lumbar Ganglion (Right)';
 ganglion_LR(end).neurons = {
     'ALNR'
     'LUAR'
     'PHAR'
     'PHBR'
     'PHCR'
+    'PHDR'
     'PLMR'
     'PLNR'
     'PVCR'
@@ -395,4 +500,4 @@ ganglion_LR(end).neurons = {
     };
 
 % Save the ganglia.
-save('ganglia_LR.mat', 'ganglion_LR');
+save('ganglia_male_LR.mat', 'ganglion_LR');
